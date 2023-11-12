@@ -1,0 +1,16 @@
+n=int(input())
+a=1
+colvo=0
+for a in range(n):
+    m=int(input())
+    b=1
+    for b in range(4):
+        first=int(m%10)
+        m=(m-first)/10
+        second=int(m%10)
+        if first == second:
+            continue
+        else:
+            colvo+=1
+        m/10
+print(int(colvo/4))
