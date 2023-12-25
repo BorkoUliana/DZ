@@ -1,0 +1,7 @@
+n=int(input( ))
+c=[]
+for x in range(0,n):
+    a = int(input())
+    c.append(bin(a)[2:])
+d = max(c, key=len)
+print(int(d, 2))
